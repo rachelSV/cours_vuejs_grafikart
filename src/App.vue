@@ -11,7 +11,7 @@
         <li v-for="todo in sortedTodos()" :key="todo.date" :class="{completed: todo.completed}"><!-- boucle qui parcourt les tâches triées et applique une class pour barrer les tâches en css au coche-->
           <label>
             <input type="checkbox" v-model="todo.completed"> <!-- quand on coche la checkbox, completed passe à true, et en décochant completed passe à false-->
-            {{ todo.title }} <!-- affiche le titre de la tâche dans la liste -->
+            {{ todo.title }} <!-- affiche le titre de la tâche dans la liste ...-->
           </label>
         </li>
       </ul>
